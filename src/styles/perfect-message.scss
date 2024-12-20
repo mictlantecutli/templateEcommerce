@@ -1,0 +1,36 @@
+/* Perfect message component */
+.perfect-occasions {
+  display: flex;
+  margin: 100px 10%;
+}
+
+.perfect-message {
+  background-color: #959e92ff;
+  width: 593px;
+  height: 250px;
+  padding: 50px 40px;
+  position: relative;
+  left: -30px;
+  top: 20px;
+  text-align: center;
+}
+
+.perfect-message>p:nth-child(1) {
+  font-weight: 300;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.perfect-message>p:nth-child(2) {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.perfect-message>p:nth-child(3) {
+  padding-top: 30px;
+}

@@ -1,0 +1,56 @@
+/* CONTACT --------------------------------- */
+.contact-us {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-us>p:nth-child(1) {
+  margin: 40px 0 0 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+}
+
+.contact-us>p:nth-child(2) {
+  margin: 20px 0 20px 0;
+}
+
+.contact-us>form>p {
+  margin: 0 0 40px 0;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact-us-form label {
+  display: flex;
+}
+
+.contact-field {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+}
+
+.contact-field input,
+.contact-field textarea {
+  padding: 7px 15px;
+}
+
+.contact-field span {
+  padding: 0 3px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.contact-submit {
+  padding: 15px 0;
+}

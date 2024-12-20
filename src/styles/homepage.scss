@@ -1,0 +1,76 @@
+/* HOMEPAGE ---------------------------------------- */
+
+/* Main homepage logo */
+.frontlogo {
+  background-position: center top;
+  background-image: url("../../public/images/frontimage.jpg");
+  width: 100%;
+  height: 675px;
+}
+
+/* "Luxury Macarons made by hand" banner on front page */
+.banner {
+  float: right;
+  margin: 100px 350px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner>span:nth-child(2) {
+  width: 200px;
+  background-color: #cbb790;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.tagline {
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 1.1em;
+  color: #ffffff;
+  width: 500px;
+}
+
+/* Newsletter component - home page */
+.newsletter {
+  background-color: #cbb790;
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.newsletter-image {
+  width: 593px;
+  padding: 0px 20px;
+  position: relative;
+  top: -35px;
+  text-align: center;
+  animation: fadeIn 4s;
+}
+
+/* Main intro on home page */
+.intro {
+  background-color: #cbb790;
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.intro p {
+  padding-bottom: 10px;
+}
