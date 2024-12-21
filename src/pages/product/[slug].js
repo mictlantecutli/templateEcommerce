@@ -6,7 +6,7 @@ import {
   AiOutlineStar,
 } from "react-icons/ai";
 import { client, urlFor } from "../../../lib/client";
-import { Product } from "../../components";
+import { Product, StarRating } from "../../components";
 import { Info } from "../../components";
 import { useStateContext } from "../../../context/StateContext";
 
@@ -48,13 +48,7 @@ const ProductDetails = ({ product, products }) => {
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
-            <div>
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiOutlineStar />
-            </div>
+            <StarRating />
             <p>(20)</p>
           </div>
           <h4>Details: </h4>
@@ -88,6 +82,18 @@ const ProductDetails = ({ product, products }) => {
             >
               Add to Cart
             </button>
+
+            {/* NEW BUTTON */}
+            <button
+              className="button btn-cart"
+              type="button"
+              onClick={() => onAdd(product, qty)}
+            >
+              <span>
+                <span>Add to My Bag</span>
+              </span>
+            </button>
+
             <button type="button" className="buy-now" onClick={handleBuyNow}>
               Buy Now
             </button>

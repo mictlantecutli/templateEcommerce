@@ -1128,9 +1128,11 @@ table.additional-info>tbody>tr>th {
   margin-top: 40px;
 }
 
-.buttons .add-to-cart,
-.buttons .buy-now {
-  margin-top: 0;
+
+.buttons .btn-cart {
+  margin-top: 40px;
+  background-color: white;
+  padding: 10px 20px;
 }
 
 @keyframes shift-left {
@@ -1184,7 +1186,7 @@ table.additional-info>tbody>tr>th {
   font-size: 14px;
   position: relative;
   cursor: pointer;
-  height: 45px;
+  height: 47px;
   border: 1px solid #f02d34;
   font-size: 18px;
 }
@@ -1363,6 +1365,34 @@ table.additional-info>tbody>tr>th {
 }
 
 /* UPDATED STAR COUNT */
+.star-rating button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.on {
+  color: #f02d34;
+  fill: #f02d34;
+}
+
+.off {
+  color: #d3d3d3;
+  fill: #ffffff;
+}
+
+.on>path {
+  color: #f02d34;
+  fill: #f02d34;
+}
+
 .star-rating button {
   background-color: transparent;
   border: none;
