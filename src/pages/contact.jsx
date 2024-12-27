@@ -2,7 +2,7 @@ const Contact = () => (
   <div className="contact-us">
     <p>Contact Us</p>
 <p>
-      If you have an enquiry about any of our products, we'd love to hear from
+      If you have an enquiry about any of our products, we&apos;d love to hear from
 you.
 </p>
 <form action="/send-data-here" method="post" className="contact-us-form">

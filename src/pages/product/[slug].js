@@ -9,6 +9,7 @@ import { client, urlFor } from "../../../lib/client";
 import { Product, StarRating } from "../../components";
 import { Info } from "../../components";
 import { useStateContext } from "../../../context/StateContext";
+import Image from "next/image";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price, sku, ingredients, weight, delivery } =
@@ -27,19 +28,25 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img
+            <Image
               src={urlFor(image && image[index])}
+              alt={`Image product from ${name}`}
               className="product-detail-image"
+              width={600}
+              height={600}
             />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-              <img
+              <Image
                 key={i}
                 src={urlFor(item)}
+                alt={`Image product from ${item.name}`}
                 className={
                   i === index ? "small-image selected-image" : "small-image"
                 }
+                width={300}
+                height={300}
                 onMouseEnter={() => setIndex(i)}
               />
             ))}

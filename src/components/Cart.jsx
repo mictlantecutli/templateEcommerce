@@ -13,6 +13,7 @@ import getStripe from "../../lib/getStripe";
 import toast from "react-hot-toast";
 import { eUSLocale } from "../../lib/utils";
 import EmptyCart from "./Cart/EmptyCart";
+import Image from "next/image";
 
 const Cart = () => {
   const cartRef = useRef();
@@ -93,9 +94,12 @@ const Cart = () => {
                 >
                   <TiDeleteOutline />
                 </button>
-                <img
+                <Image
                   src={urlFor(item?.image[0])}
+                  alt={`Image product from ${item.name}`}
                   className="cart-product-image"
+                  width={100}
+                  height={150}
                 />
                 <div className="item-desc">
                   <div>

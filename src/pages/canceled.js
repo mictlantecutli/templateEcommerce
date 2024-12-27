@@ -9,7 +9,7 @@ const Canceled = () => {
     setCartItems([]);
     setTotalPrice(0);
     setTotalQuantities(0);
-  }, []);
+  }, [setCartItems, setTotalPrice, setTotalQuantities]);
 
   return (
     <div className="canceled-wrapper">

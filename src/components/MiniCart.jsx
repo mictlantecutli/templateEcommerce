@@ -7,6 +7,7 @@ import getStripe from "../../lib/getStripe";
 import { eUSLocale } from "../../lib/utils";
 import EmptyCart from "./Cart/EmptyCart";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const MiniCart = () => {
@@ -56,14 +57,15 @@ const MiniCart = () => {
           cartItems.map((item) => (
             <div className="product" key={item._id}>
               <span>
-                <img src={urlFor(item?.image[0])} className="mini-cart-image" />
+                <Image src={urlFor(item?.image[0])} className="mini-cart-image" alt={`Image product from ${item.name}`} width={100}
+                  height={150}/>
               </span>
               <span className="item-desc">
                 <span>{item.name}</span>
                 <span className="totals">
                   <span>{item.quantity}</span>
                   <span className="multiply">x</span>
-                  <span>${eUSLocale(totalPrice)}
+                  <span>${eUSLocale(item.price)}
                   </span>
                 </span>
               </span>

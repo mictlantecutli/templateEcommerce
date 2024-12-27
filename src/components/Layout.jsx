@@ -10,7 +10,7 @@ import Footer from "./Footer/Footer";
 const Layout = ({ children }) => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Macaron Magic | great tasting home-made macarons</title>
         <link
           rel="apple-touch-icon"
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-      </Head>
+      </Head> */}
       <header>
         <NavBar />
         <DemoBanner />
